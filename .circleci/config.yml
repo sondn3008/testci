@@ -22,15 +22,13 @@ jobs:
       - run:
           command: yarn build
           name: Build app
+      - run:
+          command: yarn test
+          name: Run tests    
       - persist_to_workspace:
           root: ~/project
           paths:
             - .
-  test:
-    steps:
-      - run:
-          command: yarn test
-          name: Run tests
   deploy: # this can be any name you choose
     docker:
       - image: cimg/node:17.2.0
