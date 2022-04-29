@@ -27,9 +27,10 @@ jobs:
           paths:
             - .
   test:
+    steps:
       - run:
-          command: yarn test
-          name: Run tests
+        command: yarn test
+        name: Run tests
   deploy: # this can be any name you choose
     docker:
       - image: cimg/node:17.2.0
