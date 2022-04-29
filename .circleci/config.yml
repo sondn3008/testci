@@ -27,6 +27,7 @@ jobs:
           paths:
             - .
   test:
+    steps:
       - run:
           command: yarn test
           name: Run tests
