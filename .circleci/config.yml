@@ -39,6 +39,6 @@ jobs:
           force: true # force push when pushing to the heroku remote, see: https://devcenter.heroku.com/articles/git
 
 workflows:
-  on_commit:
+  build_on_commit:
     jobs:
       - build

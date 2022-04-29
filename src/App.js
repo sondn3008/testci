@@ -1,7 +1,8 @@
 import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+// import RequireAuth from "./components/RequireAuth";
 
 import HomePage from "./pages/HomePage";
 import SignUpPage from "./pages/SignUpPage";
