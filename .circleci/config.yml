@@ -20,8 +20,8 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run:
-          command: yarn build
-          name: Build app 
+          command: yarn build 
+          name: Build app reactjs
       - persist_to_workspace:
           root: ~/project
           paths:
